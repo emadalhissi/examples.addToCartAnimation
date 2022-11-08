@@ -248,9 +248,17 @@ class MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
             ),
             child: Opacity(
               opacity: fromPosition == null ? 0.0 : 1.0,
-              child: const Image(
-                image:
-                    NetworkImage('https://wallpaperaccess.com/full/112373.jpg'),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(100),
+                child: const SizedBox(
+                  width: 45,
+                  height: 45,
+                  child: Image(
+                    image: NetworkImage(
+                        'https://wallpaperaccess.com/full/112373.jpg'),
+                    fit: BoxFit.fill,
+                  ),
+                ),
               ),
             ),
           );
