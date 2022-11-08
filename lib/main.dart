@@ -12,6 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Add to Cart Animation',
+      theme: ThemeData(
+        highlightColor: Colors.transparent,
+        splashColor: Colors.transparent,
+      ),
       debugShowCheckedModeBanner: false,
       home: MainScreen(),
     );
