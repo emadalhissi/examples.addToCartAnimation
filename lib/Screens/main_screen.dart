@@ -168,7 +168,7 @@ class MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
                           minimumSize: const Size(double.infinity, 45),
                           elevation: 0,
                           shadowColor: Colors.transparent,
-                          backgroundColor: Colors.transparent,
+                          primary: Colors.transparent,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5),
                             side: const BorderSide(
